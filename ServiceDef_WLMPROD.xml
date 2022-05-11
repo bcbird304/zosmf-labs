@@ -1,0 +1,1175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<ServiceDefinition xmlns="http://www.ibm.com/xmlns/prod/zwlm/2006/09/ServiceDefinition.xsd">
+  <Name>WLMPROD</Name>
+  <Description>WLMPROD to use for z/OSMF lab</Description>
+  <CreationDate>2011/02/03 11:43:37</CreationDate>
+  <CreationUser>stwirag</CreationUser>
+  <ModificationDate>2014/04/03 03:56:59</ModificationDate>
+  <ModificationUser>mfusr21</ModificationUser>
+  <Level>019</Level>
+  <ReplId>E6D3D4E2E3E34040C2A9116191713000C2D4D6D940404040C9D9C4F1</ReplId>
+  <ProdId>ZOSMFWLMV2R1    HSMA213 LEVEL029</ProdId>
+
+  <Notes/>
+
+  <ResourceGroups>
+
+    <ResourceGroup>
+      <Name>CPMAV</Name>
+      <Description>Used for Cap.Provisioning</Description>
+      <CreationDate>2007/06/22 11:07:44</CreationDate>
+      <CreationUser>THEL</CreationUser>
+      <ModificationDate>2007/06/22 11:07:44</ModificationDate>
+      <ModificationUser>THEL</ModificationUser>
+      <Type>NumberCPsTimes100</Type>
+      <CapacityMinimum>30</CapacityMinimum>
+      <CapacityMaximum>90</CapacityMaximum>
+    </ResourceGroup>
+
+    <ResourceGroup>
+      <Name>ECP</Name>
+      <Description>AVT RG CPbased min 200% max 300%</Description>
+      <CreationDate>2005/11/29 12:48:11</CreationDate>
+      <CreationUser>BMOR</CreationUser>
+      <ModificationDate>2007/02/06 10:53:07</ModificationDate>
+      <ModificationUser>BMOR</ModificationUser>
+      <Type>NumberCPsTimes100</Type>
+      <CapacityMinimum>200</CapacityMinimum>
+      <CapacityMaximum>300</CapacityMaximum>
+    </ResourceGroup>
+
+    <ResourceGroup>
+      <Name>ECPE</Name>
+      <Description>AVT RG CPbased min 100% max 100%</Description>
+      <CreationDate>2006/02/06 11:02:26</CreationDate>
+      <CreationUser>BMOR</CreationUser>
+      <ModificationDate>2007/02/06 10:53:17</ModificationDate>
+      <ModificationUser>BMOR</ModificationUser>
+      <Type>NumberCPsTimes100</Type>
+      <CapacityMinimum>100</CapacityMinimum>
+      <CapacityMaximum>100</CapacityMaximum>
+    </ResourceGroup>
+
+    <ResourceGroup>
+      <Name>ECPMAX</Name>
+      <Description>AVT CPbased             max  80%</Description>
+      <CreationDate>2005/11/29 12:52:19</CreationDate>
+      <CreationUser>BMOR</CreationUser>
+      <ModificationDate>2007/02/06 10:53:24</ModificationDate>
+      <ModificationUser>BMOR</ModificationUser>
+      <Type>NumberCPsTimes100</Type>
+      <CapacityMaximum>80</CapacityMaximum>
+    </ResourceGroup>
+
+    <ResourceGroup>
+      <Name>ECPMIN</Name>
+      <Description>AVT RG CPbased min 50%</Description>
+      <CreationDate>2005/11/29 12:53:20</CreationDate>
+      <CreationUser>BMOR</CreationUser>
+      <ModificationDate>2007/02/06 10:53:29</ModificationDate>
+      <ModificationUser>BMOR</ModificationUser>
+      <Type>NumberCPsTimes100</Type>
+      <CapacityMinimum>50</CapacityMinimum>
+    </ResourceGroup>
+
+    <ResourceGroup>
+      <Name>ELPAR</Name>
+      <Description>AVT RG LPAR    min 50%   max 60%</Description>
+      <CreationDate>2005/11/29 12:54:28</CreationDate>
+      <CreationUser>BMOR</CreationUser>
+      <ModificationDate>2007/02/06 10:53:38</ModificationDate>
+      <ModificationUser>BMOR</ModificationUser>
+      <Type>PercentageLPARShare</Type>
+      <CapacityMinimum>50</CapacityMinimum>
+      <CapacityMaximum>60</CapacityMaximum>
+    </ResourceGroup>
+
+    <ResourceGroup>
+      <Name>ELPMAX</Name>
+      <Description>AVT RG LPAR              max 60%</Description>
+      <CreationDate>2005/11/29 12:55:19</CreationDate>
+      <CreationUser>BMOR</CreationUser>
+      <ModificationDate>2007/02/06 10:53:52</ModificationDate>
+      <ModificationUser>BMOR</ModificationUser>
+      <Type>PercentageLPARShare</Type>
+      <CapacityMaximum>60</CapacityMaximum>
+    </ResourceGroup>
+
+    <ResourceGroup>
+      <Name>ELPMIN</Name>
+      <Description>AVT RG LPAR min30max40</Description>
+      <CreationDate>2005/11/29 12:55:47</CreationDate>
+      <CreationUser>BMOR</CreationUser>
+      <ModificationDate>2014/04/03 03:48:41</ModificationDate>
+      <ModificationUser>mfusr21</ModificationUser>
+      <Type>PercentageLPARShare</Type>
+      <CapacityMinimum>70</CapacityMinimum>
+      <CapacityMaximum>80</CapacityMaximum>
+    </ResourceGroup>
+
+    <ResourceGroup>
+      <Name>EWLM</Name>
+      <Description>Resource Group min 5000 max15000</Description>
+      <CreationDate>2005/06/28 13:44:40</CreationDate>
+      <CreationUser>BMOR</CreationUser>
+      <ModificationDate>2006/01/11 13:37:20</ModificationDate>
+      <ModificationUser>BMOR</ModificationUser>
+      <Type>CPUServiceUnits</Type>
+      <CapacityMinimum>5000</CapacityMinimum>
+      <CapacityMaximum>15000</CapacityMaximum>
+    </ResourceGroup>
+
+    <ResourceGroup>
+      <Name>EWLMH</Name>
+      <Description>Resource Group          max20000</Description>
+      <CreationDate>2005/10/13 16:37:05</CreationDate>
+      <CreationUser>BMOR</CreationUser>
+      <ModificationDate>2006/01/11 13:35:28</ModificationDate>
+      <ModificationUser>BMOR</ModificationUser>
+      <Type>CPUServiceUnits</Type>
+      <CapacityMaximum>20000</CapacityMaximum>
+    </ResourceGroup>
+
+    <ResourceGroup>
+      <Name>EWLML</Name>
+      <Description>Resource Group min 10000</Description>
+      <CreationDate>2005/10/14 10:04:36</CreationDate>
+      <CreationUser>BMOR</CreationUser>
+      <ModificationDate>2005/10/25 09:59:36</ModificationDate>
+      <ModificationUser>BMOR</ModificationUser>
+      <Type>CPUServiceUnits</Type>
+      <CapacityMinimum>10000</CapacityMinimum>
+    </ResourceGroup>
+
+    <ResourceGroup>
+      <Name>QUIESCE</Name>
+      <CreationDate>2011/02/03 11:43:00</CreationDate>
+      <CreationUser>stwirag</CreationUser>
+      <ModificationDate>2011/02/03 11:45:05</ModificationDate>
+      <ModificationUser>stwirag</ModificationUser>
+      <Type>CPUServiceUnits</Type>
+      <CapacityMinimum>0</CapacityMinimum>
+      <CapacityMaximum>1</CapacityMaximum>
+    </ResourceGroup>
+
+  </ResourceGroups>
+
+  <Workloads>
+
+    <Workload>
+      <Name>BATCH</Name>
+      <Description>Batch jobs</Description>
+      <CreationDate>1999/04/30 07:17:18</CreationDate>
+      <CreationUser>BVAU</CreationUser>
+      <ModificationDate>1999/04/30 07:17:18</ModificationDate>
+      <ModificationUser>BVAU</ModificationUser>
+      <ServiceClasses>
+        <ServiceClass>
+          <Name>BTCHDEF</Name>
+          <Description>default Batch</Description>
+          <CreationDate>1999/04/30 07:27:22</CreationDate>
+          <CreationUser>BVAU</CreationUser>
+          <ModificationDate>2005/11/29 13:11:55</ModificationDate>
+          <ModificationUser>BMOR</ModificationUser>
+          <CPUCritical>No</CPUCritical>
+          <Goal>
+            <Velocity>
+              <Importance>5</Importance>
+              <Level>20</Level>
+            </Velocity>
+          </Goal>
+        </ServiceClass>
+        <ServiceClass>
+          <Name>DB2BPI4</Name>
+          <Description>DB2BP ExecVel=80 Imp=4</Description>
+          <CreationDate>2005/05/13 12:42:24</CreationDate>
+          <CreationUser>BMOR</CreationUser>
+          <ModificationDate>2005/05/13 12:44:43</ModificationDate>
+          <ModificationUser>BMOR</ModificationUser>
+          <CPUCritical>No</CPUCritical>
+          <Goal>
+            <Velocity>
+              <Importance>4</Importance>
+              <Level>80</Level>
+            </Velocity>
+          </Goal>
+        </ServiceClass>
+        <ServiceClass>
+          <Name>DB2BPI5</Name>
+          <Description>DB2BP ExecVel=80 Imp=5</Description>
+          <CreationDate>2005/05/13 12:42:38</CreationDate>
+          <CreationUser>BMOR</CreationUser>
+          <ModificationDate>2005/05/13 12:44:52</ModificationDate>
+          <ModificationUser>BMOR</ModificationUser>
+          <CPUCritical>No</CPUCritical>
+          <Goal>
+            <Velocity>
+              <Importance>5</Importance>
+              <Level>80</Level>
+            </Velocity>
+          </Goal>
+        </ServiceClass>
+        <ServiceClass>
+          <Name>DB2BPID</Name>
+          <Description>DB2BPID descretionary</Description>
+          <CreationDate>2005/05/31 09:14:42</CreationDate>
+          <CreationUser>BMOR</CreationUser>
+          <ModificationDate>2005/05/31 09:15:47</ModificationDate>
+          <ModificationUser>BMOR</ModificationUser>
+          <CPUCritical>No</CPUCritical>
+          <Goal>
+            <Discretionary/>
+          </Goal>
+        </ServiceClass>
+        <ServiceClass>
+          <Name>DISC</Name>
+          <Description>Discretionary load</Description>
+          <CreationDate>2006/11/21 09:02:30</CreationDate>
+          <CreationUser>THEL</CreationUser>
+          <ModificationDate>2006/11/21 09:02:30</ModificationDate>
+          <ModificationUser>THEL</ModificationUser>
+          <CPUCritical>No</CPUCritical>
+          <Goal>
+            <Discretionary/>
+          </Goal>
+        </ServiceClass>
+        <ServiceClass>
+          <Name>ECP</Name>
+          <Description>MED CPU RG ECP      ExVel50 Imp3</Description>
+          <CreationDate>2005/11/29 14:19:09</CreationDate>
+          <CreationUser>BMOR</CreationUser>
+          <ModificationDate>2005/11/30 12:23:25</ModificationDate>
+          <ModificationUser>BMOR</ModificationUser>
+          <CPUCritical>No</CPUCritical>
+          <ResourceGroupName>ECP</ResourceGroupName>
+          <Goal>
+            <Velocity>
+              <Importance>3</Importance>
+              <Level>50</Level>
+            </Velocity>
+          </Goal>
+        </ServiceClass>
+        <ServiceClass>
+          <Name>ELPAR</Name>
+          <Description>MED CPU RG ELPAR ExVel70 Imp2(3)</Description>
+          <CreationDate>2005/11/29 14:20:36</CreationDate>
+          <CreationUser>BMOR</CreationUser>
+          <ModificationDate>2005/12/13 08:01:56</ModificationDate>
+          <ModificationUser>BMOR</ModificationUser>
+          <CPUCritical>No</CPUCritical>
+          <ResourceGroupName>ELPAR</ResourceGroupName>
+          <Goal>
+            <Velocity>
+              <Importance>2</Importance>
+              <Level>70</Level>
+            </Velocity>
+          </Goal>
+        </ServiceClass>
+        <ServiceClass>
+          <Name>ELPMAX</Name>
+          <Description>HIGH CPU RG ELPMAX  ExVel80 Imp1</Description>
+          <CreationDate>2005/11/29 14:20:52</CreationDate>
+          <CreationUser>BMOR</CreationUser>
+          <ModificationDate>2005/11/30 12:22:57</ModificationDate>
+          <ModificationUser>BMOR</ModificationUser>
+          <CPUCritical>No</CPUCritical>
+          <ResourceGroupName>ELPMAX</ResourceGroupName>
+          <Goal>
+            <Velocity>
+              <Importance>1</Importance>
+              <Level>80</Level>
+            </Velocity>
+          </Goal>
+        </ServiceClass>
+        <ServiceClass>
+          <Name>ELPMIN</Name>
+          <Description>LOW CPU RG ELPMIN   ExVel40 Imp4</Description>
+          <CreationDate>2005/11/29 14:21:07</CreationDate>
+          <CreationUser>BMOR</CreationUser>
+          <ModificationDate>2005/11/30 12:22:38</ModificationDate>
+          <ModificationUser>BMOR</ModificationUser>
+          <CPUCritical>No</CPUCritical>
+          <ResourceGroupName>ELPMIN</ResourceGroupName>
+          <Goal>
+            <Velocity>
+              <Importance>4</Importance>
+              <Level>40</Level>
+            </Velocity>
+          </Goal>
+        </ServiceClass>
+        <ServiceClass>
+          <Name>JBERHIGH</Name>
+          <Description>OA14959 small consum Ex 90 Imp2</Description>
+          <CreationDate>2006/02/23 12:12:01</CreationDate>
+          <CreationUser>BMOR</CreationUser>
+          <ModificationDate>2006/02/23 12:12:01</ModificationDate>
+          <ModificationUser>BMOR</ModificationUser>
+          <CPUCritical>No</CPUCritical>
+          <Goal>
+            <Velocity>
+              <Importance>2</Importance>
+              <Level>90</Level>
+            </Velocity>
+          </Goal>
+        </ServiceClass>
+        <ServiceClass>
+          <Name>RTG1</Name>
+          <Description>Response Time Goal</Description>
+          <CreationDate>2007/06/22 10:41:52</CreationDate>
+          <CreationUser>THEL</CreationUser>
+          <ModificationDate>2007/11/06 10:18:07</ModificationDate>
+          <ModificationUser>THEL</ModificationUser>
+          <CPUCritical>No</CPUCritical>
+          <Goal>
+            <Velocity>
+              <Importance>2</Importance>
+              <Level>60</Level>
+            </Velocity>
+          </Goal>
+        </ServiceClass>
+        <ServiceClass>
+          <Name>RTG4</Name>
+          <Description>Response Time Goal</Description>
+          <CreationDate>2007/06/22 11:03:01</CreationDate>
+          <CreationUser>THEL</CreationUser>
+          <ModificationDate>2007/11/06 10:35:23</ModificationDate>
+          <ModificationUser>THEL</ModificationUser>
+          <CPUCritical>No</CPUCritical>
+          <Goal>
+            <Velocity>
+              <Importance>2</Importance>
+              <Level>60</Level>
+            </Velocity>
+          </Goal>
+        </ServiceClass>
+        <ServiceClass>
+          <Name>SOAKI1</Name>
+          <CreationDate>2014/04/03 03:52:41</CreationDate>
+          <CreationUser>mfusr21</CreationUser>
+          <ModificationDate>2014/04/03 03:52:41</ModificationDate>
+          <ModificationUser>mfusr21</ModificationUser>
+          <CPUCritical>No</CPUCritical>
+          <Goal>
+            <Velocity>
+              <Importance>1</Importance>
+              <Duration>102345</Duration>
+              <Level>60</Level>
+            </Velocity>
+            <Velocity>
+              <Importance>1</Importance>
+              <Duration>92345</Duration>
+              <Level>59</Level>
+            </Velocity>
+            <Discretionary/>
+          </Goal>
+        </ServiceClass>
+        <ServiceClass>
+          <Name>STOREC3</Name>
+          <Description>RECEIVER Imp=3 ExVel=90</Description>
+          <CreationDate>2005/02/17 16:12:50</CreationDate>
+          <CreationUser>BMOR</CreationUser>
+          <ModificationDate>2005/02/17 16:14:09</ModificationDate>
+          <ModificationUser>BMOR</ModificationUser>
+          <CPUCritical>No</CPUCritical>
+          <Goal>
+            <Velocity>
+              <Importance>3</Importance>
+              <Level>90</Level>
+            </Velocity>
+          </Goal>
+        </ServiceClass>
+        <ServiceClass>
+          <Name>STOREC4</Name>
+          <Description>RECEIVER Imp=4 ExVel=90</Description>
+          <CreationDate>2005/02/17 16:13:05</CreationDate>
+          <CreationUser>BMOR</CreationUser>
+          <ModificationDate>2005/02/17 16:13:55</ModificationDate>
+          <ModificationUser>BMOR</ModificationUser>
+          <CPUCritical>No</CPUCritical>
+          <Goal>
+            <Velocity>
+              <Importance>4</Importance>
+              <Level>90</Level>
+            </Velocity>
+          </Goal>
+        </ServiceClass>
+      </ServiceClasses>
+    </Workload>
+
+    <Workload>
+      <Name>DB2WL</Name>
+      <Description>DB2 AVT Workload</Description>
+      <CreationDate>2003/10/30 15:09:46</CreationDate>
+      <CreationUser>RUES</CreationUser>
+      <ModificationDate>2003/10/30 15:09:46</ModificationDate>
+      <ModificationUser>RUES</ModificationUser>
+      <ServiceClasses/>
+    </Workload>
+
+    <Workload>
+      <Name>OMVSUSER</Name>
+      <Description>Users of Unix System Services</Description>
+      <CreationDate>1999/07/14 11:10:04</CreationDate>
+      <CreationUser>BVAU</CreationUser>
+      <ModificationDate>1999/07/14 11:10:04</ModificationDate>
+      <ModificationUser>BVAU</ModificationUser>
+      <ServiceClasses/>
+    </Workload>
+
+    <Workload>
+      <Name>STC</Name>
+      <Description>Started Tasks</Description>
+      <CreationDate>1999/04/30 07:18:24</CreationDate>
+      <CreationUser>BVAU</CreationUser>
+      <ModificationDate>2006/10/10 14:00:35</ModificationDate>
+      <ModificationUser>MORLOK</ModificationUser>
+      <ServiceClasses>
+        <ServiceClass>
+          <Name>AK1</Name>
+          <Description>Vel imp2</Description>
+          <CreationDate>2006/09/15 11:09:05</CreationDate>
+          <CreationUser>BMO1</CreationUser>
+          <ModificationDate>2014/04/03 03:51:12</ModificationDate>
+          <ModificationUser>mfusr21</ModificationUser>
+          <CPUCritical>No</CPUCritical>
+          <Goal>
+            <Velocity>
+              <Importance>1</Importance>
+              <Level>93</Level>
+            </Velocity>
+          </Goal>
+        </ServiceClass>
+        <ServiceClass>
+          <Name>AK2</Name>
+          <Description>RT 8 per</Description>
+          <CreationDate>2008/07/08 10:35:52</CreationDate>
+          <CreationUser>BMOR</CreationUser>
+          <ModificationDate>2008/07/08 10:37:37</ModificationDate>
+          <ModificationUser>BMOR</ModificationUser>
+          <CPUCritical>No</CPUCritical>
+          <Goal>
+            <PercentileResponseTime>
+              <Importance>1</Importance>
+              <Duration>100000</Duration>
+              <ResponseTime>00:00:10.000</ResponseTime>
+              <Percentile>66</Percentile>
+            </PercentileResponseTime>
+            <PercentileResponseTime>
+              <Importance>2</Importance>
+              <Duration>200000</Duration>
+              <ResponseTime>00:00:23.000</ResponseTime>
+              <Percentile>55</Percentile>
+            </PercentileResponseTime>
+            <PercentileResponseTime>
+              <Importance>3</Importance>
+              <Duration>300000</Duration>
+              <ResponseTime>00:00:30.000</ResponseTime>
+              <Percentile>44</Percentile>
+            </PercentileResponseTime>
+            <PercentileResponseTime>
+              <Importance>4</Importance>
+              <Duration>400000</Duration>
+              <ResponseTime>00:00:40.000</ResponseTime>
+              <Percentile>33</Percentile>
+            </PercentileResponseTime>
+            <PercentileResponseTime>
+              <Importance>5</Importance>
+              <Duration>500000</Duration>
+              <ResponseTime>00:00:50.000</ResponseTime>
+              <Percentile>22</Percentile>
+            </PercentileResponseTime>
+            <PercentileResponseTime>
+              <Importance>5</Importance>
+              <Duration>600000</Duration>
+              <ResponseTime>00:01:00.000</ResponseTime>
+              <Percentile>11</Percentile>
+            </PercentileResponseTime>
+            <PercentileResponseTime>
+              <Importance>5</Importance>
+              <Duration>700000</Duration>
+              <ResponseTime>00:01:10.000</ResponseTime>
+              <Percentile>10</Percentile>
+            </PercentileResponseTime>
+            <Discretionary/>
+          </Goal>
+        </ServiceClass>
+        <ServiceClass>
+          <Name>AK3</Name>
+          <Description>Vel 60 imp3</Description>
+          <CreationDate>2006/09/15 11:10:43</CreationDate>
+          <CreationUser>BMO1</CreationUser>
+          <ModificationDate>2006/09/15 12:09:30</ModificationDate>
+          <ModificationUser>BMO1</ModificationUser>
+          <CPUCritical>No</CPUCritical>
+          <Goal>
+            <Velocity>
+              <Importance>3</Importance>
+              <Level>60</Level>
+            </Velocity>
+          </Goal>
+        </ServiceClass>
+        <ServiceClass>
+          <Name>STCDEF</Name>
+          <Description>Default Started Tasks</Description>
+          <CreationDate>1999/04/30 07:24:30</CreationDate>
+          <CreationUser>BVAU</CreationUser>
+          <ModificationDate>1999/04/30 07:24:30</ModificationDate>
+          <ModificationUser>BVAU</ModificationUser>
+          <CPUCritical>No</CPUCritical>
+          <Goal>
+            <Velocity>
+              <Importance>5</Importance>
+              <Level>20</Level>
+            </Velocity>
+          </Goal>
+        </ServiceClass>
+      </ServiceClasses>
+    </Workload>
+
+    <Workload>
+      <Name>STTQWL</Name>
+      <Description>STTQMGR Workload</Description>
+      <CreationDate>2001/01/20 10:05:44</CreationDate>
+      <CreationUser>IBMUSER</CreationUser>
+      <ModificationDate>2001/01/20 10:05:44</ModificationDate>
+      <ModificationUser>IBMUSER</ModificationUser>
+      <ServiceClasses/>
+    </Workload>
+
+    <Workload>
+      <Name>STTWL</Name>
+      <Description>WLM AVT STT Workload</Description>
+      <CreationDate>1999/07/13 14:37:47</CreationDate>
+      <CreationUser>DAD</CreationUser>
+      <ModificationDate>2001/01/20 10:06:02</ModificationDate>
+      <ModificationUser>IBMUSER</ModificationUser>
+      <ServiceClasses>
+        <ServiceClass>
+          <Name>QUIESCE</Name>
+          <CreationDate>2011/02/03 11:43:37</CreationDate>
+          <CreationUser>stwirag</CreationUser>
+          <ModificationDate>2011/02/03 11:43:37</ModificationDate>
+          <ModificationUser>stwirag</ModificationUser>
+          <CPUCritical>No</CPUCritical>
+          <ResourceGroupName>QUIESCE</ResourceGroupName>
+          <Goal>
+            <Discretionary/>
+          </Goal>
+        </ServiceClass>
+      </ServiceClasses>
+    </Workload>
+
+    <Workload>
+      <Name>TSO</Name>
+      <Description>TSO User</Description>
+      <CreationDate>1999/04/30 07:17:28</CreationDate>
+      <CreationUser>BVAU</CreationUser>
+      <ModificationDate>1999/04/30 07:17:28</ModificationDate>
+      <ModificationUser>BVAU</ModificationUser>
+      <ServiceClasses>
+        <ServiceClass>
+          <Name>TSODEF</Name>
+          <Description>Default TSO User</Description>
+          <CreationDate>1999/04/30 07:21:37</CreationDate>
+          <CreationUser>BVAU</CreationUser>
+          <ModificationDate>1999/04/30 07:23:39</ModificationDate>
+          <ModificationUser>BVAU</ModificationUser>
+          <CPUCritical>No</CPUCritical>
+          <Goal>
+            <PercentileResponseTime>
+              <Importance>3</Importance>
+              <Duration>2000</Duration>
+              <ResponseTime>00:00:01.000</ResponseTime>
+              <Percentile>80</Percentile>
+            </PercentileResponseTime>
+            <PercentileResponseTime>
+              <Importance>4</Importance>
+              <Duration>3000</Duration>
+              <ResponseTime>00:00:02.000</ResponseTime>
+              <Percentile>70</Percentile>
+            </PercentileResponseTime>
+            <Velocity>
+              <Importance>5</Importance>
+              <Level>20</Level>
+            </Velocity>
+          </Goal>
+        </ServiceClass>
+      </ServiceClasses>
+    </Workload>
+
+  </Workloads>
+
+  <ServicePolicies>
+
+    <ServicePolicy>
+      <Name>NSHIFT</Name>
+      <Description>Night shift</Description>
+      <CreationDate>2006/06/14 14:47:09</CreationDate>
+      <CreationUser>MNEU</CreationUser>
+      <ModificationDate>2011/02/03 12:12:49</ModificationDate>
+      <ModificationUser>stwirag</ModificationUser>
+      <ServiceClassOverrides>
+        <ServiceClassOverride>
+          <ServiceClassName>ELPMAX</ServiceClassName>
+          <CPUCritical>No</CPUCritical>
+          <Goal>
+            <Velocity>
+              <Importance>1</Importance>
+              <Level>90</Level>
+            </Velocity>
+          </Goal>
+        </ServiceClassOverride>
+        <ServiceClassOverride>
+          <ServiceClassName>JBERHIGH</ServiceClassName>
+          <CPUCritical>No</CPUCritical>
+          <Goal>
+            <Discretionary/>
+          </Goal>
+        </ServiceClassOverride>
+      </ServiceClassOverrides>
+      <ResourceGroupOverrides/>
+    </ServicePolicy>
+
+    <ServicePolicy>
+      <Name>WLMSTTAV</Name>
+      <Description>Default Policy</Description>
+      <CreationDate>2001/01/11 23:10:36</CreationDate>
+      <CreationUser>RUES</CreationUser>
+      <ModificationDate>2011/02/03 12:12:17</ModificationDate>
+      <ModificationUser>stwirag</ModificationUser>
+      <ServiceClassOverrides/>
+      <ResourceGroupOverrides/>
+    </ServicePolicy>
+
+  </ServicePolicies>
+
+  <ReportClasses>
+
+    <ReportClass>
+      <Name>BATCH0</Name>
+      <CreationDate>2011/02/03 11:09:36</CreationDate>
+      <CreationUser>stwirag</CreationUser>
+      <ModificationDate>2011/02/03 11:09:36</ModificationDate>
+      <ModificationUser>stwirag</ModificationUser>
+    </ReportClass>
+
+    <ReportClass>
+      <Name>BATCH1</Name>
+      <CreationDate>2011/02/03 11:22:59</CreationDate>
+      <CreationUser>stwirag</CreationUser>
+      <ModificationDate>2011/02/03 11:22:59</ModificationDate>
+      <ModificationUser>stwirag</ModificationUser>
+    </ReportClass>
+
+    <ReportClass>
+      <Name>BATCH2</Name>
+      <CreationDate>2011/02/03 11:23:09</CreationDate>
+      <CreationUser>stwirag</CreationUser>
+      <ModificationDate>2011/02/03 11:23:09</ModificationDate>
+      <ModificationUser>stwirag</ModificationUser>
+    </ReportClass>
+
+    <ReportClass>
+      <Name>BATCH3</Name>
+      <CreationDate>2011/02/03 11:23:18</CreationDate>
+      <CreationUser>stwirag</CreationUser>
+      <ModificationDate>2011/02/03 11:23:18</ModificationDate>
+      <ModificationUser>stwirag</ModificationUser>
+    </ReportClass>
+
+    <ReportClass>
+      <Name>CIM</Name>
+      <CreationDate>2007/03/30 11:57:42</CreationDate>
+      <CreationUser>THEL</CreationUser>
+      <ModificationDate>2007/03/30 11:57:42</ModificationDate>
+      <ModificationUser>THEL</ModificationUser>
+    </ReportClass>
+
+    <ReportClass>
+      <Name>DISC</Name>
+      <CreationDate>2006/11/21 12:40:34</CreationDate>
+      <CreationUser>THEL</CreationUser>
+      <ModificationDate>2006/11/21 12:40:34</ModificationDate>
+      <ModificationUser>THEL</ModificationUser>
+    </ReportClass>
+
+    <ReportClass>
+      <Name>RTG1</Name>
+      <CreationDate>2007/06/22 10:43:11</CreationDate>
+      <CreationUser>THEL</CreationUser>
+      <ModificationDate>2007/06/22 10:43:11</ModificationDate>
+      <ModificationUser>THEL</ModificationUser>
+    </ReportClass>
+
+    <ReportClass>
+      <Name>RTG2</Name>
+      <CreationDate>2007/06/25 10:01:22</CreationDate>
+      <CreationUser>THEL</CreationUser>
+      <ModificationDate>2007/06/25 10:01:22</ModificationDate>
+      <ModificationUser>THEL</ModificationUser>
+    </ReportClass>
+
+    <ReportClass>
+      <Name>RTG3</Name>
+      <CreationDate>2007/06/25 10:01:53</CreationDate>
+      <CreationUser>THEL</CreationUser>
+      <ModificationDate>2007/06/25 10:01:53</ModificationDate>
+      <ModificationUser>THEL</ModificationUser>
+    </ReportClass>
+
+    <ReportClass>
+      <Name>RTG4</Name>
+      <CreationDate>2007/06/25 10:02:04</CreationDate>
+      <CreationUser>THEL</CreationUser>
+      <ModificationDate>2007/06/25 10:02:04</ModificationDate>
+      <ModificationUser>THEL</ModificationUser>
+    </ReportClass>
+
+    <ReportClass>
+      <Name>SOAKI1</Name>
+      <CreationDate>2006/11/21 12:41:56</CreationDate>
+      <CreationUser>THEL</CreationUser>
+      <ModificationDate>2006/11/21 12:41:56</ModificationDate>
+      <ModificationUser>THEL</ModificationUser>
+    </ReportClass>
+
+    <ReportClass>
+      <Name>SOAKI2</Name>
+      <CreationDate>2006/11/21 12:41:57</CreationDate>
+      <CreationUser>THEL</CreationUser>
+      <ModificationDate>2006/11/21 12:41:57</ModificationDate>
+      <ModificationUser>THEL</ModificationUser>
+    </ReportClass>
+
+    <ReportClass>
+      <Name>SOAKI3</Name>
+      <CreationDate>2006/11/21 12:41:58</CreationDate>
+      <CreationUser>THEL</CreationUser>
+      <ModificationDate>2006/11/21 12:41:58</ModificationDate>
+      <ModificationUser>THEL</ModificationUser>
+    </ReportClass>
+
+    <ReportClass>
+      <Name>SOAKI4</Name>
+      <CreationDate>2006/11/21 12:41:58</CreationDate>
+      <CreationUser>THEL</CreationUser>
+      <ModificationDate>2006/11/21 12:41:58</ModificationDate>
+      <ModificationUser>THEL</ModificationUser>
+    </ReportClass>
+
+    <ReportClass>
+      <Name>STC0</Name>
+      <CreationDate>2011/02/03 11:10:40</CreationDate>
+      <CreationUser>stwirag</CreationUser>
+      <ModificationDate>2011/02/03 11:10:40</ModificationDate>
+      <ModificationUser>stwirag</ModificationUser>
+    </ReportClass>
+
+    <ReportClass>
+      <Name>STC1</Name>
+      <CreationDate>2011/02/03 11:21:57</CreationDate>
+      <CreationUser>stwirag</CreationUser>
+      <ModificationDate>2011/02/03 11:21:57</ModificationDate>
+      <ModificationUser>stwirag</ModificationUser>
+    </ReportClass>
+
+    <ReportClass>
+      <Name>STC2</Name>
+      <CreationDate>2011/02/03 11:22:07</CreationDate>
+      <CreationUser>stwirag</CreationUser>
+      <ModificationDate>2011/02/03 11:22:07</ModificationDate>
+      <ModificationUser>stwirag</ModificationUser>
+    </ReportClass>
+
+    <ReportClass>
+      <Name>STC3</Name>
+      <CreationDate>2011/02/03 11:22:15</CreationDate>
+      <CreationUser>stwirag</CreationUser>
+      <ModificationDate>2011/02/03 11:22:15</ModificationDate>
+      <ModificationUser>stwirag</ModificationUser>
+    </ReportClass>
+
+    <ReportClass>
+      <Name>STC4</Name>
+      <CreationDate>2011/02/03 11:22:27</CreationDate>
+      <CreationUser>stwirag</CreationUser>
+      <ModificationDate>2011/02/03 11:22:27</ModificationDate>
+      <ModificationUser>stwirag</ModificationUser>
+    </ReportClass>
+
+    <ReportClass>
+      <Name>TSO0</Name>
+      <CreationDate>2011/02/03 11:10:24</CreationDate>
+      <CreationUser>stwirag</CreationUser>
+      <ModificationDate>2011/02/03 11:10:24</ModificationDate>
+      <ModificationUser>stwirag</ModificationUser>
+    </ReportClass>
+
+    <ReportClass>
+      <Name>TSO1</Name>
+      <CreationDate>2011/02/03 11:23:40</CreationDate>
+      <CreationUser>stwirag</CreationUser>
+      <ModificationDate>2011/02/03 11:23:40</ModificationDate>
+      <ModificationUser>stwirag</ModificationUser>
+    </ReportClass>
+
+    <ReportClass>
+      <Name>TSO2</Name>
+      <CreationDate>2011/02/03 11:23:49</CreationDate>
+      <CreationUser>stwirag</CreationUser>
+      <ModificationDate>2011/02/03 11:23:49</ModificationDate>
+      <ModificationUser>stwirag</ModificationUser>
+    </ReportClass>
+
+    <ReportClass>
+      <Name>TSO3</Name>
+      <CreationDate>2011/02/03 11:23:59</CreationDate>
+      <CreationUser>stwirag</CreationUser>
+      <ModificationDate>2011/02/03 11:23:59</ModificationDate>
+      <ModificationUser>stwirag</ModificationUser>
+    </ReportClass>
+
+  </ReportClasses>
+
+  <ClassificationGroups>
+
+    <ClassificationGroup>
+      <Name>CG1</Name>
+      <CreationDate>2010/03/12 00:34:50</CreationDate>
+      <CreationUser>wirag</CreationUser>
+      <ModificationDate>2010/03/12 00:34:50</ModificationDate>
+      <ModificationUser>wirag</ModificationUser>
+      <QualifierType>ConnectionType</QualifierType>
+      <QualifierNames>
+        <QualifierName>
+          <Name>ABC*</Name>
+        </QualifierName>
+      </QualifierNames>
+    </ClassificationGroup>
+
+  </ClassificationGroups>
+
+  <Classifications>
+
+    <Classification>
+      <SubsystemType>JES</SubsystemType>
+      <Description>changed: PGM 08/07/08</Description>
+      <CreationDate>1900/01/01 00:00:00</CreationDate>
+      <CreationUser>N.N.</CreationUser>
+      <ModificationDate>2011/02/03 11:31:39</ModificationDate>
+      <ModificationUser>stwirag</ModificationUser>
+      <DefaultServiceClassName>BTCHDEF</DefaultServiceClassName>
+      <DefaultReportClassName>BATCH0</DefaultReportClassName>
+      <ClassificationRules>
+        <ClassificationRule>
+          <QualifierType>TransactionName</QualifierType>
+          <QualifierValue>REC3*</QualifierValue>
+          <ServiceClassName>STOREC3</ServiceClassName>
+          <StorageCritical>No</StorageCritical>
+          <RegionGoal>No</RegionGoal>
+        </ClassificationRule>
+        <ClassificationRule>
+          <QualifierType>TransactionName</QualifierType>
+          <QualifierValue>REC4*</QualifierValue>
+          <ServiceClassName>STOREC4</ServiceClassName>
+          <StorageCritical>No</StorageCritical>
+          <RegionGoal>No</RegionGoal>
+        </ClassificationRule>
+        <ClassificationRule>
+          <QualifierType>TransactionName</QualifierType>
+          <QualifierValue>ECP*</QualifierValue>
+          <ServiceClassName>ECP</ServiceClassName>
+          <ReportClassName>BATCH1</ReportClassName>
+          <StorageCritical>No</StorageCritical>
+          <RegionGoal>No</RegionGoal>
+        </ClassificationRule>
+        <ClassificationRule>
+          <QualifierType>TransactionName</QualifierType>
+          <QualifierValue>ELPMA*</QualifierValue>
+          <ServiceClassName>ELPMAX</ServiceClassName>
+          <StorageCritical>No</StorageCritical>
+          <RegionGoal>No</RegionGoal>
+        </ClassificationRule>
+        <ClassificationRule>
+          <QualifierType>TransactionName</QualifierType>
+          <QualifierValue>ELPMI*</QualifierValue>
+          <ServiceClassName>ELPMIN</ServiceClassName>
+          <StorageCritical>No</StorageCritical>
+          <RegionGoal>No</RegionGoal>
+        </ClassificationRule>
+        <ClassificationRule>
+          <QualifierType>TransactionName</QualifierType>
+          <QualifierValue>ELPAR*</QualifierValue>
+          <ServiceClassName>ELPAR</ServiceClassName>
+          <StorageCritical>No</StorageCritical>
+          <RegionGoal>No</RegionGoal>
+        </ClassificationRule>
+        <ClassificationRule>
+          <QualifierType>TransactionName</QualifierType>
+          <QualifierValue>DB2BP4*</QualifierValue>
+          <ServiceClassName>DB2BPI4</ServiceClassName>
+          <ReportClassName>BATCH2</ReportClassName>
+          <StorageCritical>No</StorageCritical>
+          <RegionGoal>No</RegionGoal>
+        </ClassificationRule>
+        <ClassificationRule>
+          <QualifierType>TransactionName</QualifierType>
+          <QualifierValue>DB2BP5*</QualifierValue>
+          <ServiceClassName>DB2BPI5</ServiceClassName>
+          <ReportClassName>BATCH2</ReportClassName>
+          <StorageCritical>No</StorageCritical>
+          <RegionGoal>No</RegionGoal>
+        </ClassificationRule>
+        <ClassificationRule>
+          <QualifierType>TransactionName</QualifierType>
+          <QualifierValue>DB2BP*</QualifierValue>
+          <ServiceClassName>DB2BPID</ServiceClassName>
+          <ReportClassName>BATCH2</ReportClassName>
+          <StorageCritical>No</StorageCritical>
+          <RegionGoal>No</RegionGoal>
+        </ClassificationRule>
+        <ClassificationRule>
+          <QualifierType>TransactionName</QualifierType>
+          <QualifierValue>DISC*</QualifierValue>
+          <ServiceClassName>DISC</ServiceClassName>
+          <ReportClassName>BATCH3</ReportClassName>
+          <StorageCritical>No</StorageCritical>
+          <RegionGoal>No</RegionGoal>
+        </ClassificationRule>
+      </ClassificationRules>
+    </Classification>
+
+    <Classification>
+      <SubsystemType>STC</SubsystemType>
+      <Description>changed: PGM 2008/7/8</Description>
+      <CreationDate>1900/01/01 00:00:00</CreationDate>
+      <CreationUser>N.N.</CreationUser>
+      <ModificationDate>2011/02/03 11:25:03</ModificationDate>
+      <ModificationUser>stwirag</ModificationUser>
+      <DefaultServiceClassName>STCDEF</DefaultServiceClassName>
+      <DefaultReportClassName>STC0</DefaultReportClassName>
+      <ClassificationRules>
+        <ClassificationRule>
+          <QualifierType>TransactionName</QualifierType>
+          <QualifierValue>SERV1</QualifierValue>
+          <ServiceClassName>AK1</ServiceClassName>
+          <ReportClassName>STC1</ReportClassName>
+          <StorageCritical>No</StorageCritical>
+          <RegionGoal>No</RegionGoal>
+        </ClassificationRule>
+        <ClassificationRule>
+          <QualifierType>TransactionName</QualifierType>
+          <QualifierValue>SERV2</QualifierValue>
+          <ServiceClassName>AK1</ServiceClassName>
+          <ReportClassName>STC2</ReportClassName>
+          <StorageCritical>No</StorageCritical>
+          <RegionGoal>No</RegionGoal>
+        </ClassificationRule>
+        <ClassificationRule>
+          <QualifierType>TransactionName</QualifierType>
+          <QualifierValue>SERV3</QualifierValue>
+          <ServiceClassName>AK3</ServiceClassName>
+          <ReportClassName>STC3</ReportClassName>
+          <StorageCritical>No</StorageCritical>
+          <RegionGoal>No</RegionGoal>
+        </ClassificationRule>
+        <ClassificationRule>
+          <QualifierType>SubsystemParameter</QualifierType>
+          <QualifierValue>SYSTEM</QualifierValue>
+          <ServiceClassName>SYSTEM</ServiceClassName>
+          <StorageCritical>No</StorageCritical>
+          <RegionGoal>No</RegionGoal>
+        </ClassificationRule>
+        <ClassificationRule>
+          <QualifierType>SubsystemParameter</QualifierType>
+          <QualifierValue>SYSSTC</QualifierValue>
+          <ServiceClassName>SYSSTC</ServiceClassName>
+          <StorageCritical>No</StorageCritical>
+          <RegionGoal>No</RegionGoal>
+        </ClassificationRule>
+        <ClassificationRule>
+          <QualifierType>TransactionName</QualifierType>
+          <QualifierValue>GRSMON</QualifierValue>
+          <ServiceClassName>SYSSTC</ServiceClassName>
+          <StorageCritical>No</StorageCritical>
+          <RegionGoal>No</RegionGoal>
+        </ClassificationRule>
+        <ClassificationRule>
+          <QualifierType>TransactionName</QualifierType>
+          <QualifierValue>GPM*</QualifierValue>
+          <ServiceClassName>SYSSTC</ServiceClassName>
+          <StorageCritical>No</StorageCritical>
+          <RegionGoal>No</RegionGoal>
+        </ClassificationRule>
+        <ClassificationRule>
+          <QualifierType>TransactionName</QualifierType>
+          <QualifierValue>GRSMON</QualifierValue>
+          <ServiceClassName>SYSSTC</ServiceClassName>
+          <StorageCritical>No</StorageCritical>
+          <RegionGoal>No</RegionGoal>
+        </ClassificationRule>
+        <ClassificationRule>
+          <QualifierType>TransactionName</QualifierType>
+          <QualifierValue>PEG*</QualifierValue>
+          <ServiceClassName>SYSSTC</ServiceClassName>
+          <StorageCritical>No</StorageCritical>
+          <RegionGoal>No</RegionGoal>
+        </ClassificationRule>
+        <ClassificationRule>
+          <QualifierType>TransactionName</QualifierType>
+          <QualifierValue>CFZ*</QualifierValue>
+          <ServiceClassName>SYSSTC</ServiceClassName>
+          <StorageCritical>No</StorageCritical>
+          <RegionGoal>No</RegionGoal>
+        </ClassificationRule>
+      </ClassificationRules>
+    </Classification>
+
+    <Classification>
+      <SubsystemType>TSO</SubsystemType>
+      <Description>changed: PGM 06/10/26</Description>
+      <CreationDate>1900/01/01 00:00:00</CreationDate>
+      <CreationUser>N.N.</CreationUser>
+      <ModificationDate>2011/02/03 11:14:31</ModificationDate>
+      <ModificationUser>stwirag</ModificationUser>
+      <DefaultServiceClassName>TSODEF</DefaultServiceClassName>
+      <DefaultReportClassName>TSO0</DefaultReportClassName>
+      <ClassificationRules>
+        <ClassificationRule>
+          <QualifierType>Userid</QualifierType>
+          <QualifierValue>THEL</QualifierValue>
+          <ServiceClassName>SYSSTC</ServiceClassName>
+          <StorageCritical>No</StorageCritical>
+          <RegionGoal>No</RegionGoal>
+        </ClassificationRule>
+        <ClassificationRule>
+          <QualifierType>Userid</QualifierType>
+          <QualifierValue>THELA</QualifierValue>
+          <ServiceClassName>SYSSTC</ServiceClassName>
+          <StorageCritical>No</StorageCritical>
+          <RegionGoal>No</RegionGoal>
+        </ClassificationRule>
+        <ClassificationRule>
+          <QualifierType>Userid</QualifierType>
+          <QualifierValue>BMO1</QualifierValue>
+          <ServiceClassName>SYSSTC</ServiceClassName>
+          <StorageCritical>No</StorageCritical>
+          <RegionGoal>No</RegionGoal>
+        </ClassificationRule>
+        <ClassificationRule>
+          <QualifierType>Userid</QualifierType>
+          <QualifierValue>BMOR</QualifierValue>
+          <ServiceClassName>SYSSTC</ServiceClassName>
+          <StorageCritical>No</StorageCritical>
+          <RegionGoal>No</RegionGoal>
+        </ClassificationRule>
+        <ClassificationRule>
+          <QualifierType>Userid</QualifierType>
+          <QualifierValue>GKS</QualifierValue>
+          <ServiceClassName>SYSSTC</ServiceClassName>
+          <StorageCritical>No</StorageCritical>
+          <RegionGoal>No</RegionGoal>
+        </ClassificationRule>
+        <ClassificationRule>
+          <QualifierType>Userid</QualifierType>
+          <QualifierValue>RSCHILL</QualifierValue>
+          <ServiceClassName>SYSSTC</ServiceClassName>
+          <StorageCritical>No</StorageCritical>
+          <RegionGoal>No</RegionGoal>
+        </ClassificationRule>
+      </ClassificationRules>
+    </Classification>
+
+  </Classifications>
+
+  <ServiceParameter>
+
+    <ServiceCoefficients>
+      <CPU>1.0</CPU>
+      <IOC>0.5</IOC>
+      <MSO>0.0000</MSO>
+      <SRB>1.0</SRB>
+    </ServiceCoefficients>
+
+    <ServiceOptions>
+      <IOPriorityManagement>Yes</IOPriorityManagement>
+      <DynamicAliasManagement>No</DynamicAliasManagement>
+    </ServiceOptions>
+
+  </ServiceParameter>
+
+  <ApplicationEnvironments>
+
+    <ApplicationEnvironment>
+      <Name>BOSS1</Name>
+      <Description>sstype=CB  no addr space limit</Description>
+      <SubsystemType>CB</SubsystemType>
+      <Limit>NoLimit</Limit>
+      <ProcedureName>RUNCTT</ProcedureName>
+      <StartParameter>M=&amp;IWMSSNM</StartParameter>
+    </ApplicationEnvironment>
+
+    <ApplicationEnvironment>
+      <Name>DB2APPL1</Name>
+      <Description>WLM AVT DB2</Description>
+      <SubsystemType>DB2</SubsystemType>
+      <Limit>NoLimit</Limit>
+      <ProcedureName>WLPSTCAV</ProcedureName>
+    </ApplicationEnvironment>
+
+    <ApplicationEnvironment>
+      <Name>STTAPPL1</Name>
+      <Description>WLM AVT STT</Description>
+      <SubsystemType>STT</SubsystemType>
+      <Limit>NoLimit</Limit>
+      <ProcedureName>WLPSTCAV</ProcedureName>
+    </ApplicationEnvironment>
+
+    <ApplicationEnvironment>
+      <Name>STTAPPL2</Name>
+      <Description>WLM AVT STT</Description>
+      <SubsystemType>STT</SubsystemType>
+      <Limit>NoLimit</Limit>
+      <ProcedureName>WLPSTCA2</ProcedureName>
+    </ApplicationEnvironment>
+
+  </ApplicationEnvironments>
+
+  <Resources>
+
+    <Resource>
+      <Name>DB</Name>
+      <Description>Database</Description>
+    </Resource>
+
+    <Resource>
+      <Name>JBOSS</Name>
+      <Description>Web container</Description>
+    </Resource>
+
+  </Resources>
+
+  <SchedulingEnvironments>
+
+    <SchedulingEnvironment>
+      <Name>SCHEDENV</Name>
+      <ResourceNames>
+        <ResourceName>
+          <Name>DB</Name>
+          <RequiredState>Off</RequiredState>
+        </ResourceName>
+        <ResourceName>
+          <Name>JBOSS</Name>
+          <RequiredState>Off</RequiredState>
+        </ResourceName>
+      </ResourceNames>
+    </SchedulingEnvironment>
+
+  </SchedulingEnvironments>
+
+  <Extensions/>
+
+</ServiceDefinition>
+
